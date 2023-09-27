@@ -19,3 +19,6 @@ run: build
 		--eif-path "vsock-experiment.eif" \
 		--debug-mode \
 		--attach-console
+
+spam:
+	ali -r 5000 -W 1200 -c 1200 --duration 10m http://localhost:8080/
